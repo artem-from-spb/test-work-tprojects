@@ -2,9 +2,9 @@
 
 @font-face{font-family:"Golos-UI";src:local("Golos-UI_Regular"),url(fonts/Golos-UI_Regular.28e502dbcc83c91565af.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:"Golos-UI";src:local("Golos-UI_Medium"),url(fonts/Golos-UI_Medium.727b1fef51a9bac82009.ttf) format("truetype");font-weight:500;font-style:normal}
 
-.page{max-width:1920px;min-width:375px;width:100%;margin:0 auto;font-family:"Golos-UI", Arial, sans-serif;background-color:white}
+.page{max-width:1920px;min-width:375px;margin:0 auto;padding-right:56px;font-family:"Golos-UI", Arial, sans-serif;background-color:white;position:relative}
 
-.header__link:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.header__link{opacity:1;transition:opacity 0.7s ease}.header__link{cursor:pointer;transition:opacity 0.5s ease;opacity:1;font-weight:400;font-size:16px;line-height:115%;margin:0 0 0 24px}
+.header__link:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.header__link{opacity:1;transition:opacity 0.7s ease}.header__link{font-weight:400;font-size:16px;line-height:115%;margin:0 0 0 24px}
 
 .header{display:flex;flex-direction:row;background-color:#273142;min-height:56px;align-content:center;color:#fff;flex-wrap:wrap}
 
@@ -18,6 +18,10 @@
 
 .header__nav{margin:0;padding:0;display:flex;align-items:center}
 
+.header__link-menu{font-weight:500;position:relative;cursor:pointer;font-weight:400;font-size:16px;line-height:115%;margin:0 0 0 24px}
+
+.header__link-menu_active{color:#0085F0}
+
 .top-panel{display:flex;flex-direction:row;background-color:#fff;height:56px;align-content:center;justify-content:space-between;flex-wrap:wrap}
 
 .top-panel__block{display:flex;flex-direction:row;justify-content:center;flex-wrap:wrap;align-content:center}
@@ -30,15 +34,15 @@
 
 .top-panel__info-text_color_blue{color:#0085F0;margin-right:7px}
 
-.top-panel__menu-button:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.top-panel__menu-button{opacity:1;transition:opacity 0.7s ease}.top-panel__menu-button{padding:0;border:none;background:none;color:grey;display:flex}.top-panel__menu-button{font-size:25px}
+.top-panel__menu-button:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.top-panel__menu-button{opacity:1;transition:opacity 0.7s ease}.top-panel__menu-button{font-size:25px;position:relative;margin:0;padding:0}
 
 .top-panel__weather-pic{width:22px;margin-right:7px}
 
-.top-panel__add-button:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.top-panel__add-button{opacity:1;transition:opacity 0.7s ease}.top-panel__add-button{width:100px;height:40px;background:#1f8efa;border-radius:4px;border:none;margin-right:16px;display:inline-block;font-weight:500;font-size:14px;line-height:115%;text-align:center;letter-spacing:0.02em;text-transform:uppercase;color:#ffffff}
+.top-panel__add-button{width:100px;height:40px;background:#1f8efa;border-radius:4px;border:none;margin-right:16px;display:inline-block;font-weight:500;font-size:14px;line-height:115%;text-align:center;letter-spacing:0.02em;text-transform:uppercase;color:#ffffff;cursor:pointer}
 
-.workspace{display:grid;grid-template-columns:repeat(3, 1fr);gap:16px;margin:16px}
+.workspace{display:grid;grid-template-columns:repeat(3, 1fr);gap:16px;padding:16px;background-color:#EFF3F6}@media screen and (max-width: 1330px){.workspace{grid-template-columns:repeat(2, 1fr)}}@media screen and (max-width: 950px){.workspace{grid-template-columns:repeat(1, 1fr)}}
 
-.card{display:flex;flex-direction:column}.card{border:1px solid #dfe3e9;box-shadow:0 -4px #3a9eff;border-radius:8px;min-width:22%;overflow:hidden}
+.card{display:flex;flex-direction:column}.card{border:1px solid #dfe3e9;box-shadow:0 -4px #3a9eff;border-radius:8px;min-width:22%;overflow:hidden;max-width:600px}@media screen and (max-width: 950px){.card{margin:0 auto}}
 
 .card__actions-block{display:flex;flex-direction:row}.card__actions-block{align-content:center;flex-wrap:wrap}
 
@@ -52,7 +56,7 @@
 
 .card__footer-block{display:flex;flex-direction:row}.card__footer-block{background-image:linear-gradient(180deg, #EFF3F6 0%, #DFE3E9 100%)}.card__footer-block{justify-content:space-between;padding:0 16px;height:50px}
 
-.card__footer-image{height:26px;display:inline}
+.card__footer-image:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.card__footer-image{opacity:1;transition:opacity 0.7s ease}.card__footer-image{height:26px;display:inline}
 
 .card__header-block{display:flex;flex-direction:column}.card__header-block{position:relative;padding:0 16px}
 
@@ -63,6 +67,56 @@
 .card__title{font-weight:500;font-size:16px;line-height:115%;color:#354052;padding:0;margin:10px 0 7px 0}
 
 .card__footer-date{font-weight:400;font-size:13px;line-height:120%;color:#7f8fa4;margin:auto 0}
+
+.footer{height:24px;background:#e9edf1;position:fixed;display:flex;justify-content:flex-end;margin:0 16px;width:99%;right:72px;bottom:0;max-width:1888px}
+
+.footer__copyright{font-weight:400;font-size:13px;line-height:120%;color:#7f8fa4;margin:0 0 8px 0}
+
+.footer__copyright_border-left_gray{border-left:1px solid #DFE3E9}
+
+.menu-vertical{display:flex;flex-direction:column}.menu-vertical{width:56px;background-color:#354052;height:100vh;position:fixed;right:0;top:0}
+
+.menu-vertical__help:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.menu-vertical__help{opacity:1;transition:opacity 0.7s ease}.menu-vertical__help{background:none;color:inherit;border:none;padding:0;cursor:pointer;outline:inherit}.menu-vertical__help{height:56px;width:56px;background-repeat:no-repeat;background-position:center}.menu-vertical__help{background-image:url(13e6c65ba1362a42fc8a.png);margin-top:auto}
+
+.menu-vertical__link:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.menu-vertical__link{opacity:1;transition:opacity 0.7s ease}.menu-vertical__link{background:none;color:inherit;border:none;padding:0;cursor:pointer;outline:inherit}.menu-vertical__link{height:56px;width:56px;background-repeat:no-repeat;background-position:center}.menu-vertical__link{border-bottom:1px solid gray}
+
+.menu-vertical__link_type_archive{background-image:url(2611da2b1db5b4f0c2bb.png)}
+
+.menu-vertical__link_type_messages{background-image:url(863bf138b41dec92ee62.png)}
+
+.menu-vertical__link_type_notes{background-image:url(21d2bda60820ca2390d3.png)}
+
+.menu-vertical__link_type_notifications{background-image:url(d4b875d2a2185975121a.png)}
+
+.menu-vertical__link_type_options{background-image:url(b48d30fd2c62ff112106.png)}
+
+.menu-vertical__link_type_time{background-image:url(0b6d0f68f7b373513cba.png)}
+
+.menu-vertical__open:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.menu-vertical__open{opacity:1;transition:opacity 0.7s ease}.menu-vertical__open{background:none;color:inherit;border:none;padding:0;cursor:pointer;outline:inherit}.menu-vertical__open{height:56px;width:56px;background-repeat:no-repeat;background-position:center}.menu-vertical__open{background:linear-gradient(0deg, #3a9eff -251.25%, #ecf6ff 50%);font-weight:700;font-size:24px;line-height:100%;color:#516173}
+
+.menu-vertical__options{display:flex;flex-direction:column}.menu-vertical__options{list-style-type:none;padding:0;margin:0}
+
+.menu{display:flex;flex-direction:column}.menu{width:168px;height:fit-content;padding:18px 16px;z-index:1;border-radius:4px}
+
+.menu__button{background:none;color:inherit;border:none;padding:0;cursor:pointer;outline:inherit}.menu__button{font-weight:500;font-size:14px;line-height:115%;color:#354052;text-align:left;margin:16px 0 0 0}
+
+.menu__item{font-weight:500;font-size:14px;line-height:115%;color:#354052;height:36px}
+
+.menu__item_active{color:#1F8EFA;background-color:#ECF6FF}
+
+.menu__items{list-style-type:none;padding:0;margin:0;border-bottom:1px solid #dfe3e9}
+
+.header-settings-menu{display:none;position:absolute;top:25px;right:0;background-color:#fff}
+
+.header-settings-menu_visible{display:inline}
+
+.top-panel-menu{display:none;position:absolute;top:100px;right:220px;background-color:#fff}@media screen and (max-width: 877px){.top-panel-menu{top:140px}}
+
+.top-panel-menu_visible{display:inline}
+
+.top-panel-menu-add{display:none;position:absolute;top:112px;right:72px;background-color:#fff;z-index:1}
+
+.top-panel-menu-add_visible{display:inline}
 
 
 
