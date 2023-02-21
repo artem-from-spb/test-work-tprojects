@@ -2,5 +2,19 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  margin: 16px;
+  padding: 16px;
+  background-color: #EFF3F6;;
+}
+
+@media screen and (max-width: 1330px) {
+  .workspace {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .workspace {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
 }

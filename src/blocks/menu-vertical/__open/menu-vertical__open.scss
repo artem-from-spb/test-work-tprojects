@@ -1,0 +1,16 @@
+@import "../../../utils/constants.scss";
+
+.menu-vertical__open {
+  @extend %button-style_off;
+  background: linear-gradient(0deg, #3a9eff -251.25%, #ecf6ff 50%);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #516173;
+  @extend %menu-button-size;
+  @extend %link-decoration;
+}
+
+.menu-vertical__open:hover {
+  @extend %link-decoration-hover;
+}

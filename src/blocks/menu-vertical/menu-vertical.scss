@@ -1,0 +1,11 @@
+@import "../../utils/constants.scss";
+
+.menu-vertical {
+  @extend %flex-column;
+  width: 56px;
+  background-color: $vertical-menu-color;
+  height: 100vh;
+  position: fixed;
+  right:  0;
+  top: 0;
+}

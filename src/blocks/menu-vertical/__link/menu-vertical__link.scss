@@ -1,0 +1,13 @@
+@import "../../../utils/constants.scss";
+
+.menu-vertical__link {
+  @extend %button-style_off;
+  @extend %menu-button-size;
+  @extend %link-decoration;
+  border-bottom: 1px solid gray;
+
+}
+
+.menu-vertical__link:hover {
+  @extend %link-decoration-hover;
+}

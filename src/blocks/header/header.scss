@@ -1,7 +1,9 @@
+@import "../../utils/constants.scss";
+
 .header {
   display: flex;
   flex-direction: row;
-  background-color: #273142;
+  background-color: $top-menu-color;
   min-height: 56px;
   align-content: center;
   color: #fff;

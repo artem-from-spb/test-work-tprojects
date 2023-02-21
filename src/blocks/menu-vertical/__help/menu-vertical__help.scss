@@ -1,0 +1,13 @@
+@import "../../../utils/constants.scss";
+
+.menu-vertical__help {
+  @extend %button-style_off;
+  background-image: url(../../../images/menu__f1.png);
+  @extend %menu-button-size;
+  @extend %link-decoration;
+  margin-top: auto;
+}
+
+.menu-vertical__help:hover {
+  @extend %link-decoration-hover;
+}

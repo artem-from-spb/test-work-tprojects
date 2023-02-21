@@ -1,0 +1,10 @@
+@import "../../utils/constants.scss";
+
+.menu {
+  width: 168px;
+  height: fit-content;
+  @extend %flex-column;
+  padding: 18px 16px;
+  z-index: 1;
+  border-radius: 4px;
+}

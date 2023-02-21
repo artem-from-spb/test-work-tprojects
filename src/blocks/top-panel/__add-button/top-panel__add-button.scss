@@ -15,9 +15,6 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #ffffff;
-  @extend %link-decoration;
+cursor: pointer;
 }
 
-.top-panel__add-button:hover {
-  @extend %link-decoration-hover;
-}

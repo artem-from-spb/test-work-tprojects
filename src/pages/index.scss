@@ -12,6 +12,8 @@
 @import url(../blocks/header/__plus-button/header__plus-button.scss);
 @import url(../blocks/header/__project-name/header__project-name.scss);
 @import url(../blocks/header/__nav/header__nav.scss);
+@import url(../blocks/header/__link-menu/header__link-menu.scss);
+@import url(../blocks/header/__link-menu/_active/header__link-menu_active.scss);
 
 // top menu
 @import url(../blocks/top-panel/top-panel.scss);
@@ -29,7 +31,6 @@
 
 // workspace-card
 @import url(../blocks/card/card.scss);
-
 @import url(../blocks/card/__actions-block/card__actions-block.scss);
 @import url(../blocks/card/__calendar-link/card__calendar-link.scss);
 @import url(../blocks/card/__calendar-link/_active/card__calendar-link_active.scss);
@@ -42,3 +43,40 @@
 @import url(../blocks/card/__slash/card__slash.scss);
 @import url(../blocks/card/__title/card__title.scss);
 @import url(../blocks/card/__footer-date/card__footer-date.scss);
+
+// footer
+@import url(../blocks/footer/footer.scss);
+@import url(../blocks/footer/__copyright/footer__copyright.scss);
+@import url(../blocks/footer/__copyright/__copyright_border-left_gray/footer__copyright_border-left_gray.scss);
+
+// vertical menu
+@import url(../blocks/menu-vertical/menu-vertical.scss);
+@import url(../blocks/menu-vertical/__help/menu-vertical__help.scss);
+@import url(../blocks/menu-vertical/__link/menu-vertical__link.scss);
+@import url(../blocks/menu-vertical/__link/_type/menu-vertical__link_type_archive.scss);
+@import url(../blocks/menu-vertical/__link/_type/menu-vertical__link_type_messages.scss);
+@import url(../blocks/menu-vertical/__link/_type/menu-vertical__link_type_notes.scss);
+@import url(../blocks/menu-vertical/__link/_type/menu-vertical__link_type_notifications.scss);
+@import url(../blocks/menu-vertical/__link/_type/menu-vertical__link_type_options.scss);
+@import url(../blocks/menu-vertical/__link/_type/menu-vertical__link_type_time.scss);
+@import url(../blocks/menu-vertical/__open/menu-vertical__open.scss);
+@import url(../blocks/menu-vertical/__options/menu-vertical__options.scss);
+
+// всплывающее меню общие
+@import url(../blocks/menu/menu.scss);
+@import url(../blocks/menu/__button/menu__button.scss);
+@import url(../blocks/menu/__item/menu__item.scss);
+@import url(../blocks/menu/__item/_active/menu__item_active.scss);
+@import url(../blocks/menu/__items/menu__items.scss);
+
+// всплывающее меню на хедере
+@import url(../blocks/header-settings-menu/header-settings-menu.scss);
+@import url(../blocks/header-settings-menu/_visible/header-settings-menu_visible.scss);
+
+// всплывающее меню на панели под хедером ...
+@import url(../blocks/top-panel-menu/top-panel-menu.scss);
+@import url(../blocks/top-panel-menu/_visible/top-panel-menu_visible.scss);
+
+// всплывающее меню на панели под хедером ДОБАВИТЬ
+@import url(../blocks/top-panel-menu-add/top-panel-menu-add.scss);
+@import url(../blocks/top-panel-menu-add/_visible/top-panel-menu_visible.scss);

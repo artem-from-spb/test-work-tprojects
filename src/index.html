@@ -8,7 +8,7 @@
   </head>
 
   <body class="page">
-
+    <!-- верхнее меню -->
     <header class="header">
       <img
         src="<%=require('../src/images/logo.jpg')%>"
@@ -29,13 +29,65 @@
           <li class="header__link">Проекты</li>
           <li class="header__link">Контакты</li>
           <li class="header__link">Компании</li>
-          <li class="header__link">...</li>
+          <li class="header__link-menu">
+            ...
+            <!-- Mod-set_Menu-settings -->
+            <div class="menu header-settings-menu">
+              <ul class="menu__items">
+                <li class="menu__item">Календарь</li>
+                <li class="menu__item">Услуги</li>
+                <li class="menu__item">Финансы</li>
+                <li class="menu__item">Документы</li>
+                <li class="menu__item">Сотрудники</li>
+                <li class="menu__item">Медиафайлы</li>
+              </ul>
+              <button class="menu__button">&#9881; Настроить меню</button>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <!-- боковое меню -->
+    <div class="menu-vertical">
+      <button class="menu-vertical__open" type="button">B</button>
+      <ul class="menu-vertical__options">
+        <li>
+          <button
+            class="menu-vertical__link menu-vertical__link_type_notes"
+          ></button>
+        </li>
+        <li>
+          <button
+            class="menu-vertical__link menu-vertical__link_type_messages"
+          ></button>
+        </li>
+        <li>
+          <button
+            class="menu-vertical__link menu-vertical__link_type_notifications"
+          ></button>
+        </li>
+        <li>
+          <button
+            class="menu-vertical__link menu-vertical__link_type_time"
+          ></button>
+        </li>
+        <li>
+          <button
+            class="menu-vertical__link menu-vertical__link_type_archive"
+          ></button>
+        </li>
+        <li>
+          <button
+            class="menu-vertical__link menu-vertical__link_type_options"
+          ></button>
+        </li>
+      </ul>
+      <button class="menu-vertical__help" type="button"></button>
+    </div>
 
+    <main>
+      <!-- Панель под хэдэром -->
       <section class="top-panel">
         <div class="top-panel__block">
           <h3 class="top-panel__header">РАБОТА С ЗАДАЧАМИ</h3>
@@ -53,19 +105,41 @@
           </p>
         </div>
         <div class="top-panel__block">
-          <button class="top-panel__menu-button" type="button">...</button>
+          <p class="top-panel__menu-button">...
+            <!-- Mod-set_WA-add -->
+            <div class="menu top-panel-menu">
+              <ul class="menu__items">
+                <li class="menu__item">&#8853; Создать</li>
+                <li class="menu__item">&#128393; Редактировать</li>
+                <li class="menu__item">🗑️ Удалить</li>
+              </ul>
+              <button class="menu__button">&#9881; Настроить</button>
+            </div>
+          </p>
           <img
             src="<%=require('../src/images/help.png')%>"
             class="top-panel__help-pic"
             alt="help"
           />
-          <button class="top-panel__add-button" type="button">ДОБАВИТЬ</button>
+          <button class="top-panel__add-button" type="button">ДОБАВИТЬ
+            <!-- Mod-set_WA-add -->
+            <div class="menu top-panel-menu-add">
+              <ul class="menu__items">
+                <li class="menu__item">Доска</li>
+                <li class="menu__item">Отчет</li>
+                <li class="menu__item">Разделы</li>
+                <li class="menu__item">Задачи</li>
+                <li class="menu__item">Карта</li>
+                <li class="menu__item">История</li>
+                <li class="menu__item">Сценарии</li>
+              </ul>
+            </div>
+          </button>
         </div>
       </section>
 
       <section class="workspace">
-        <!-- card1 -->
-        <!-- Сделать template? -->
+        <!-- Распределение задач -->
         <div class="card">
           <div class="card__header-block">
             <h3 class="card__title">Распределение задач</h3>
@@ -84,6 +158,44 @@
           <div class="card__chart-block">
             <img
               src="<%=require('../src/images/chart1.png')%>"
+              alt="График"
+              class="card__temp-fill-image"
+            />
+          </div>
+          <div class="card__footer-block">
+            <p class="card__footer-date">на 15 фев 11:26</p>
+            <div class="card__actions-block">
+              <img
+                src="<%=require('../src/images/refresh.png')%>"
+                class="card__footer-image"
+              />
+              <img
+                src="<%=require('../src/images/expand.png')%>"
+                class="card__footer-image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Воронка сделок -->
+        <div class="card">
+          <div class="card__header-block">
+            <h3 class="card__title">Воронка сделок</h3>
+            <div class="card__calendar">
+              <a href="/" class="card__calendar-link">Сделки</a>
+              <span class="card__slash">/</span>
+              <a href="/" class="card__calendar-link card__calendar-link_active"
+                >Неделя</a
+              >
+              <a href="/" class="card__calendar-link card__calendar-link_active"
+                >08.01.22 - 15.01.22</a
+              >
+            </div>
+            <button type="button" class="card__menu-button">...</button>
+          </div>
+          <div class="card__chart-block">
+            <img
+              src="<%=require('../src/images/chart2.png')%>"
               alt="График"
               class="card__temp-fill-image"
             />
@@ -248,9 +360,90 @@
             </div>
           </div>
         </div>
+        <div class="card">
+          <div class="card__header-block">
+            <h3 class="card__title">Распределение задач</h3>
+            <div class="card__calendar">
+              <a href="/" class="card__calendar-link">Задачи</a>
+              <span class="card__slash">/</span>
+              <a href="/" class="card__calendar-link card__calendar-link_active"
+                >Неделя</a
+              >
+              <a href="/" class="card__calendar-link card__calendar-link_active"
+                >08.01.22 - 15.01.22</a
+              >
+            </div>
+            <button type="button" class="card__menu-button">...</button>
+          </div>
+          <div class="card__chart-block">
+            <img
+              src="<%=require('../src/images/chart1.png')%>"
+              alt="График"
+              class="card__temp-fill-image"
+            />
+          </div>
+          <div class="card__footer-block">
+            <p class="card__footer-date">на 15 фев 11:26</p>
+            <div class="card__actions-block">
+              <img
+                src="<%=require('../src/images/refresh.png')%>"
+                class="card__footer-image"
+              />
+              <img
+                src="<%=require('../src/images/expand.png')%>"
+                class="card__footer-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header-block">
+            <h3 class="card__title">Распределение задач</h3>
+            <div class="card__calendar">
+              <a href="/" class="card__calendar-link">Задачи</a>
+              <span class="card__slash">/</span>
+              <a href="/" class="card__calendar-link card__calendar-link_active"
+                >Неделя</a
+              >
+              <a href="/" class="card__calendar-link card__calendar-link_active"
+                >08.01.22 - 15.01.22</a
+              >
+            </div>
+            <button type="button" class="card__menu-button">...</button>
+          </div>
+          <div class="card__chart-block">
+            <img
+              src="<%=require('../src/images/chart1.png')%>"
+              alt="График"
+              class="card__temp-fill-image"
+            />
+          </div>
+          <div class="card__footer-block">
+            <p class="card__footer-date">на 15 фев 11:26</p>
+            <div class="card__actions-block">
+              <img
+                src="<%=require('../src/images/refresh.png')%>"
+                class="card__footer-image"
+              />
+              <img
+                src="<%=require('../src/images/expand.png')%>"
+                class="card__footer-image"
+              />
+            </div>
+          </div>
+        </div>
         <!-- ------------- -->
-
       </section>
     </main>
+
+    <!-- футер -->
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2015-2022 TigerWeb</p>
+      <p class="footer__copyright footer__copyright_border-left_gray">
+        v. 0.0.1
+      </p>
+    </footer>
+
+    <!-- Менюшки -->
   </body>
 </html>

@@ -7,5 +7,11 @@
   border-radius: 8px;
   min-width: 22%;
   overflow: hidden;
+  max-width: 600px;
+}
 
+@media screen and (max-width: 950px) {
+  .card {
+    margin: 0 auto;
+  }
 }

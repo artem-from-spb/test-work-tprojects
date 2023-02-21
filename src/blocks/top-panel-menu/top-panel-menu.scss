@@ -1,0 +1,14 @@
+.top-panel-menu {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 220px;
+  background-color: #fff;
+
+}
+
+@media screen and (max-width: 877px) {
+  .top-panel-menu {
+    top: 140px;
+  }
+}

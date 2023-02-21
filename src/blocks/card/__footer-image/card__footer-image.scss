@@ -1,4 +1,11 @@
+@import "../../../utils/constants.scss";
+
 .card__footer-image {
   height: 26px;
   display: inline;
+  @extend %link-decoration;
+}
+
+.card__footer-image:hover {
+  @extend %link-decoration-hover;
 }
