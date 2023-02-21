@@ -1,0 +1,7 @@
+@import "../../../utils/constants.scss";
+
+.card__header-block {
+  @extend %flex-column;
+  position: relative;
+  padding: 0 16px;
+}

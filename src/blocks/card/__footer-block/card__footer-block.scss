@@ -1,0 +1,9 @@
+@import "../../../utils/constants.scss";
+
+.card__footer-block {
+  @extend %card-footer-gradient;
+  @extend %flex-row;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 50px;
+}

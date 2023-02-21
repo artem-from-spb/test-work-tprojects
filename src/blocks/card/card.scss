@@ -1,0 +1,11 @@
+@import "../../utils/constants.scss";
+
+.card {
+  @extend %flex-column;
+  border: 1px solid #dfe3e9;
+  box-shadow: 0 -4px #3a9eff;
+  border-radius: 8px;
+  min-width: 22%;
+  overflow: hidden;
+
+}

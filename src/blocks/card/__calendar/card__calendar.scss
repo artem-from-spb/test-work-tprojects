@@ -1,0 +1,6 @@
+@import "../../../utils/constants.scss";
+
+.card__calendar {
+  @extend %flex-row;
+  margin-bottom: 14px;
+}

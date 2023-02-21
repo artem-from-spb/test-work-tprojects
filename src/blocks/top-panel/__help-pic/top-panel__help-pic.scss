@@ -1,0 +1,14 @@
+@import "../../../utils/constants.scss";
+
+.top-panel__help-pic {
+height: 27px;
+display: flex;
+margin: 0 17px;
+padding: 0;
+align-self: center;
+@extend %link-decoration;
+}
+
+.top-panel__help-pic:hover {
+  @extend %link-decoration-hover;
+  }

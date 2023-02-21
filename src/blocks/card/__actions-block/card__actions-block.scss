@@ -1,0 +1,7 @@
+@import "../../../utils/constants.scss";
+
+.card__actions-block {
+  @extend %flex-row;
+  align-content: center;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,16 @@
+.top-panel__info-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 115%;
+  color: #354052;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-right: #dfe3e9 1px solid;
+  display: flex;
+  align-items: center;
+}
+
+.top-panel__info-text:last-child {
+  border-right:none;
+
+}

@@ -1,0 +1,15 @@
+@import "../../../utils/constants.scss";
+
+.card__menu-button {
+  @extend %menu-button;
+  @extend %link-decoration;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+}
+
+.card__menu-button:hover {
+  @extend %link-decoration-hover;
+}

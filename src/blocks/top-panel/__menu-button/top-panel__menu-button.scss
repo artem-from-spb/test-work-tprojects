@@ -1,0 +1,11 @@
+@import "../../../utils/constants.scss";
+
+.top-panel__menu-button {
+  @extend %menu-button;
+  font-size: 25px;
+  @extend %link-decoration;
+}
+
+.top-panel__menu-button:hover {
+  @extend %link-decoration-hover;
+}

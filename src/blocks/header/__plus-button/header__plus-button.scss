@@ -1,0 +1,16 @@
+@import "../../../utils/constants.scss";
+
+.header__plus-button {
+  height: 44px;
+  margin: 0 4px 0 25px;
+  display: flex;
+  @extend %link-decoration;
+  transition: transform .6s ease;
+}
+
+
+.header__plus-button:hover {
+  @extend %link-decoration-hover;
+  transition: transform .7s ease;
+  transform: scale(1.05);
+}

@@ -1,0 +1,15 @@
+@import "../../../utils/constants.scss";
+
+.card__calendar-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 115%;
+  color: #516173;
+  @extend %link-decoration;
+  text-decoration: none;
+  margin-right: 7px;
+}
+
+.card__calendar-link:hover {
+  @extend %link-decoration-hover;
+}

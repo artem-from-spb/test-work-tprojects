@@ -1,0 +1,33 @@
+// scss
+%link-decoration-hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.7s ease;
+}
+
+%link-decoration {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%menu-button {
+  padding: 0;
+  border: none;
+  background: none;
+  color: grey;
+  display: flex;
+}
+
+%card-footer-gradient {
+  background-image: linear-gradient(180deg, #EFF3F6 0%, #DFE3E9 100%);
+}
