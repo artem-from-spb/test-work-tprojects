@@ -7,7 +7,10 @@
   color: #516173;
   @extend %link-decoration;
   text-decoration: none;
-  margin-right: 7px;
+  margin: 0 7px 0 0;
+  padding: 0;
+  height: fit-content;
+  position: relative;
 }
 
 .card__calendar-link:hover {

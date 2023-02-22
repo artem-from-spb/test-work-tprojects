@@ -30,7 +30,9 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "chart.js": "^4.2.1",
     "core-js": "^3.26.1",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "simple-jscalendar": "^1.4.4"
   }
 }

@@ -23,17 +23,22 @@
 @import url(../blocks/top-panel/__info-text/top-panel__info-text.scss);
 @import url(../blocks/top-panel/__info-text/_color/top-panel__info-text_color_blue.scss);
 @import url(../blocks/top-panel/__menu-button/top-panel__menu-button.scss);
+@import url(../blocks/top-panel/__menu-button/_active/top-panel__menu-button_active.scss);
 @import url(../blocks/top-panel/__weather-pic/top-panel__weather-pic.scss);
 @import url(../blocks/top-panel/__add-button/top-panel__add-button.scss);
+@import url(../blocks/top-panel/__add-button/_active/top-panel__add-button_active.scss);
 
 // workspace
 @import url(../blocks/workspace/workspace.scss);
 
-// workspace-card
+// card
 @import url(../blocks/card/card.scss);
+@import url(../blocks/card/_border/card_border_red.scss);
+@import url(../blocks/card/_lorem/card_lorem.scss);
 @import url(../blocks/card/__actions-block/card__actions-block.scss);
 @import url(../blocks/card/__calendar-link/card__calendar-link.scss);
 @import url(../blocks/card/__calendar-link/_active/card__calendar-link_active.scss);
+@import url(../blocks/card/__calendar-link/_clicked/card__calendar-link_clicked.scss);
 @import url(../blocks/card/__calendar/card__calendar.scss);
 @import url(../blocks/card/__chart-block/card__chart-block.scss);
 @import url(../blocks/card/__footer-block/card__footer-block.scss);
@@ -80,3 +85,7 @@
 // всплывающее меню на панели под хедером ДОБАВИТЬ
 @import url(../blocks/top-panel-menu-add/top-panel-menu-add.scss);
 @import url(../blocks/top-panel-menu-add/_visible/top-panel-menu_visible.scss);
+
+// всплывающее меню на кнопку Неделя
+@import url(../blocks/week-or-month-menu/week-or-month-menu.scss);
+@import url(../blocks/week-or-month-menu/_visible/top-panel-menu_visible.scss);

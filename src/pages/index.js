@@ -1,5 +1,8 @@
 import "./index.scss";
 
+import "../utils/jsCalendar.js";
+import "../utils/jsCalendar.css";
+
 const headerSettingsMenuOpenButton =
   document.querySelector(".header__link-menu");
 const topPanelMenuOpenButton = document.querySelector(
@@ -8,10 +11,18 @@ const topPanelMenuOpenButton = document.querySelector(
 const topPanelMenuOpenAddButton = document.querySelector(
   ".top-panel__add-button"
 );
+const calendarMenuOpenButton = document.querySelector(
+  ".card__open-menu-calendar"
+);
+const weekOrMonthMenuOpenButton = document.querySelector(
+  ".card__calendar-link_deals"
+);
 
 const headerSettingsMenu = document.querySelector(".header-settings-menu");
 const topPanelMenu = document.querySelector(".top-panel-menu");
 const topPanelMenuAdd = document.querySelector(".top-panel-menu-add");
+const calendar = document.querySelector(".auto-jsCalendar");
+const weekOrMonthMenu = document.querySelector(".week-or-month-menu");
 
 const menuItem = document.querySelectorAll(".menu__item");
 
@@ -47,6 +58,15 @@ openMenu(
   "top-panel__add-button_active",
   "top-panel-menu-add_visible"
 );
+
+openMenu(
+  weekOrMonthMenuOpenButton,
+  weekOrMonthMenu,
+  "card__calendar-link_clicked",
+  "week-or-month-menu_visible"
+);
+
+openMenu(calendarMenuOpenButton, calendar, "", "calendar__display_true");
 
 // Подсветка пункта меню при наведении
 let current = undefined;

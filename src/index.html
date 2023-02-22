@@ -15,7 +15,7 @@
         class="header__logo"
         alt="logo"
       />
-      <a class="header__project-name" href="/">TProjects</a>
+      <a class="header__project-name" href="#">TProjects</a>
       <img
         src="<%=require('../src/images/plus.png')%>"
         class="header__plus-button"
@@ -105,36 +105,34 @@
           </p>
         </div>
         <div class="top-panel__block">
-          <p class="top-panel__menu-button">...
-            <!-- Mod-set_WA-add -->
-            <div class="menu top-panel-menu">
-              <ul class="menu__items">
-                <li class="menu__item">&#8853; Создать</li>
-                <li class="menu__item">&#128393; Редактировать</li>
-                <li class="menu__item">🗑️ Удалить</li>
-              </ul>
-              <button class="menu__button">&#9881; Настроить</button>
-            </div>
-          </p>
+          <p class="top-panel__menu-button">...</p>
+          <!-- Mod-set_WA-add -->
+          <div class="menu top-panel-menu">
+            <ul class="menu__items">
+              <li class="menu__item">&#8853; Создать</li>
+              <li class="menu__item">&#128393; Редактировать</li>
+              <li class="menu__item">🗑️ Удалить</li>
+            </ul>
+            <button class="menu__button">&#9881; Настроить</button>
+          </div>
           <img
             src="<%=require('../src/images/help.png')%>"
             class="top-panel__help-pic"
             alt="help"
           />
-          <button class="top-panel__add-button" type="button">ДОБАВИТЬ
-            <!-- Mod-set_WA-add -->
-            <div class="menu top-panel-menu-add">
-              <ul class="menu__items">
-                <li class="menu__item">Доска</li>
-                <li class="menu__item">Отчет</li>
-                <li class="menu__item">Разделы</li>
-                <li class="menu__item">Задачи</li>
-                <li class="menu__item">Карта</li>
-                <li class="menu__item">История</li>
-                <li class="menu__item">Сценарии</li>
-              </ul>
-            </div>
-          </button>
+          <button class="top-panel__add-button" type="button">ДОБАВИТЬ</button>
+          <!-- Mod-set_WA-add -->
+          <div class="menu top-panel-menu-add">
+            <ul class="menu__items">
+              <li class="menu__item">Доска</li>
+              <li class="menu__item">Отчет</li>
+              <li class="menu__item">Разделы</li>
+              <li class="menu__item">Задачи</li>
+              <li class="menu__item">Карта</li>
+              <li class="menu__item">История</li>
+              <li class="menu__item">Сценарии</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -144,23 +142,34 @@
           <div class="card__header-block">
             <h3 class="card__title">Распределение задач</h3>
             <div class="card__calendar">
-              <a href="/" class="card__calendar-link">Задачи</a>
+              <a href="#" class="card__calendar-link">Задачи</a>
               <span class="card__slash">/</span>
-              <a href="/" class="card__calendar-link card__calendar-link_active"
-                >Неделя</a
+              <p
+                class="card__calendar-link card__calendar-link_active card__calendar-link_deals"
               >
-              <a href="/" class="card__calendar-link card__calendar-link_active"
-                >08.01.22 - 15.01.22</a
+                Неделя
+              </p>
+              <!-- Mod-set_WA-add -->
+              <div class="menu week-or-month-menu">
+                <ul class="menu__items">
+                  <li class="menu__item">Неделя</li>
+                  <li class="menu__item">Месяц</li>
+                  <li class="menu__item">Квартал</li>
+                </ul>
+              </div>
+              <p
+                class="card__calendar-link card__calendar-link_active card__open-menu-calendar"
               >
+                08.01.22 - 15.01.22
+              </p>
+              <!-- Календарь -->
+              <div class="auto-jsCalendar calendar__display_false"></div>
+              <!--  -->
             </div>
             <button type="button" class="card__menu-button">...</button>
           </div>
           <div class="card__chart-block">
-            <img
-              src="<%=require('../src/images/chart1.png')%>"
-              alt="График"
-              class="card__temp-fill-image"
-            />
+            <canvas id="myChart" class="chart"></canvas>
           </div>
           <div class="card__footer-block">
             <p class="card__footer-date">на 15 фев 11:26</p>
@@ -178,18 +187,18 @@
         </div>
 
         <!-- Воронка сделок -->
-        <div class="card">
+        <div class="card card_border_red">
           <div class="card__header-block">
             <h3 class="card__title">Воронка сделок</h3>
             <div class="card__calendar">
-              <a href="/" class="card__calendar-link">Сделки</a>
+              <a href="#" class="card__calendar-link">Сделки</a>
               <span class="card__slash">/</span>
-              <a href="/" class="card__calendar-link card__calendar-link_active"
-                >Неделя</a
-              >
-              <a href="/" class="card__calendar-link card__calendar-link_active"
-                >08.01.22 - 15.01.22</a
-              >
+              <p class="card__calendar-link card__calendar-link_active">
+                Неделя
+              </p>
+              <p class="card__calendar-link card__calendar-link_active">
+                08.01.22 - 15.01.22
+              </p>
             </div>
             <button type="button" class="card__menu-button">...</button>
           </div>
@@ -216,7 +225,7 @@
         </div>
 
         <!-- Заглушки -->
-        <div class="card">
+        <div class="card card_lorem">
           <div class="card__header-block">
             <h3 class="card__title">Распределение задач</h3>
             <div class="card__calendar">
@@ -252,7 +261,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card card_lorem">
           <div class="card__header-block">
             <h3 class="card__title">Распределение задач</h3>
             <div class="card__calendar">
@@ -288,7 +297,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card card_lorem">
           <div class="card__header-block">
             <h3 class="card__title">Распределение задач</h3>
             <div class="card__calendar">
@@ -324,7 +333,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card card_lorem">
           <div class="card__header-block">
             <h3 class="card__title">Распределение задач</h3>
             <div class="card__calendar">
@@ -360,7 +369,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card card_lorem">
           <div class="card__header-block">
             <h3 class="card__title">Распределение задач</h3>
             <div class="card__calendar">
@@ -396,7 +405,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card card_lorem">
           <div class="card__header-block">
             <h3 class="card__title">Распределение задач</h3>
             <div class="card__calendar">
@@ -444,6 +453,43 @@
       </p>
     </footer>
 
-    <!-- Менюшки -->
+    <!-- Диагнаммы -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const ctx = document.getElementById("myChart");
+
+      new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels: ["Александра", "Тимур", "Денис", "Ангелина Сейт", "Владимир"],
+          datasets: [
+            {
+              label: "Распределение задач",
+              data: [17, 55, 6, 10, 9],
+              backgroundColor: [
+                "#673AB7",
+                "#3A9EFF",
+                "#00BCD4",
+                "#FFB300",
+                "#10AB4F",
+              ],
+              hoverOffset: 4,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            legend: {
+              position: "bottom",
+              labels: {
+                usePointStyle: true,
+              },
+            },
+          },
+        },
+      });
+    </script>
+    <!--  -->
+
   </body>
 </html>
