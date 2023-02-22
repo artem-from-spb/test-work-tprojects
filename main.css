@@ -20,7 +20,7 @@
 
 .header__link-menu{font-weight:500;position:relative;cursor:pointer;font-weight:400;font-size:16px;line-height:115%;margin:0 0 0 24px}
 
-.header__link-menu_active{color:#0085F0}
+.header__link-menu_active{color:#0085f0}
 
 .top-panel{display:flex;flex-direction:row;background-color:#fff;height:56px;align-content:center;justify-content:space-between;flex-wrap:wrap}
 
@@ -32,33 +32,43 @@
 
 .top-panel__info-text{font-weight:700;font-size:16px;line-height:115%;color:#354052;padding-left:16px;padding-right:16px;border-right:#dfe3e9 1px solid;display:flex;align-items:center}.top-panel__info-text:last-child{border-right:none}
 
-.top-panel__info-text_color_blue{color:#0085F0;margin-right:7px}
+.top-panel__info-text_color_blue{color:#0085f0;margin-right:7px}
 
 .top-panel__menu-button:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.top-panel__menu-button{opacity:1;transition:opacity 0.7s ease}.top-panel__menu-button{font-size:25px;position:relative;margin:0;padding:0}
+
+.top-panel__menu-button_active{color:#0085f0}
 
 .top-panel__weather-pic{width:22px;margin-right:7px}
 
 .top-panel__add-button{width:100px;height:40px;background:#1f8efa;border-radius:4px;border:none;margin-right:16px;display:inline-block;font-weight:500;font-size:14px;line-height:115%;text-align:center;letter-spacing:0.02em;text-transform:uppercase;color:#ffffff;cursor:pointer}
 
+.top-panel__add-button_active{background-color:gray}
+
 .workspace{display:grid;grid-template-columns:repeat(3, 1fr);gap:16px;padding:16px;background-color:#EFF3F6}@media screen and (max-width: 1330px){.workspace{grid-template-columns:repeat(2, 1fr)}}@media screen and (max-width: 950px){.workspace{grid-template-columns:repeat(1, 1fr)}}
 
-.card{display:flex;flex-direction:column}.card{border:1px solid #dfe3e9;box-shadow:0 -4px #3a9eff;border-radius:8px;min-width:22%;overflow:hidden;max-width:600px}@media screen and (max-width: 950px){.card{margin:0 auto}}
+.card{display:flex;flex-direction:column}.card{border:1px solid #dfe3e9;box-shadow:0 -4px #3a9eff;border-radius:8px;min-width:22%;overflow:hidden;max-width:600px}@media screen and (max-width: 950px){.card{margin:0 auto;width:70%}}
+
+.card_border_red{box-shadow:0 -4px #E91E63}
+
+.card_lorem{opacity:0.3}
 
 .card__actions-block{display:flex;flex-direction:row}.card__actions-block{align-content:center;flex-wrap:wrap}
 
-.card__calendar-link:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.card__calendar-link{opacity:1;transition:opacity 0.7s ease}.card__calendar-link{font-weight:500;font-size:14px;line-height:115%;color:#516173;text-decoration:none;margin-right:7px}
+.card__calendar-link:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.card__calendar-link{opacity:1;transition:opacity 0.7s ease}.card__calendar-link{font-weight:500;font-size:14px;line-height:115%;color:#516173;text-decoration:none;margin:0 7px 0 0;padding:0;height:fit-content;position:relative}
 
 .card__calendar-link_active{color:#354052;border-bottom:1px solid #0085F0}
 
-.card__calendar{display:flex;flex-direction:row}.card__calendar{margin-bottom:14px}
+.card__calendar-link_clicked{background-color:#fff;color:#0085f0}
 
-.card__chart-block{border-bottom:1px solid #dfe3e9;border-top:1px solid #dfe3e9}
+.card__calendar{display:flex;flex-direction:row}.card__calendar{margin:0;height:32px}
 
-.card__footer-block{display:flex;flex-direction:row}.card__footer-block{background-image:linear-gradient(180deg, #EFF3F6 0%, #DFE3E9 100%)}.card__footer-block{justify-content:space-between;padding:0 16px;height:50px}
+.card__chart-block{border-bottom:1px solid #dfe3e9;border-top:1px solid #dfe3e9;max-width:594px;max-height:374px;background-color:#fff;display:flex;justify-content:center;padding-top:15px}
+
+.card__footer-block{display:flex;flex-direction:row}.card__footer-block{background-image:linear-gradient(180deg, #eff3f6 0%, #dfe3e9 100%)}.card__footer-block{justify-content:space-between;padding:0 16px;height:50px}
 
 .card__footer-image:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.card__footer-image{opacity:1;transition:opacity 0.7s ease}.card__footer-image{height:26px;display:inline}
 
-.card__header-block{display:flex;flex-direction:column}.card__header-block{position:relative;padding:0 16px}
+.card__header-block{display:flex;flex-direction:column}.card__header-block{position:relative;padding:0 16px;background-color:#fff}
 
 .card__menu-button:hover{cursor:pointer;opacity:0.7;transition:opacity 0.7s ease}.card__menu-button{opacity:1;transition:opacity 0.7s ease}.card__menu-button{padding:0;border:none;background:none;color:grey;display:flex}.card__menu-button{font-size:22px;font-weight:500;position:absolute;top:14px;right:20px}
 
@@ -100,7 +110,7 @@
 
 .menu__button{background:none;color:inherit;border:none;padding:0;cursor:pointer;outline:inherit}.menu__button{font-weight:500;font-size:14px;line-height:115%;color:#354052;text-align:left;margin:16px 0 0 0}
 
-.menu__item{font-weight:500;font-size:14px;line-height:115%;color:#354052;height:36px}
+.menu__item{font-weight:500;font-size:14px;line-height:115%;color:#354052;height:36px;cursor:pointer}
 
 .menu__item_active{color:#1F8EFA;background-color:#ECF6FF}
 
@@ -118,5 +128,10 @@
 
 .top-panel-menu-add_visible{display:inline}
 
+.week-or-month-menu{display:none;position:absolute;top:58px;left:80px;background-color:#fff;z-index:1;width:88px}
+
+.week-or-month-menu_visible{display:inline}
 
 
+
+.jsCalendar *{margin:0;padding:0}.jsCalendar table,.jsCalendar table td,.jsCalendar table th{border:0}.jsCalendar table{background-color:#fff;border-collapse:collapse;border-radius:4px;box-shadow:0 0 2px rgba(0,0,0,.4);color:#000;font-family:Tahoma,Geneva,sans-serif;margin:5px}.jsCalendar thead .jsCalendar-title{height:40px;line-height:40px}.jsCalendar thead .jsCalendar-title-left{float:left}.jsCalendar thead .jsCalendar-title-right{float:right}.jsCalendar thead .jsCalendar-nav-left,.jsCalendar thead .jsCalendar-nav-right{border-radius:10px;color:#999;cursor:pointer;font-family:Courier New,Courier,monospace;font-size:12px;font-weight:700;height:20px;line-height:20px;margin:10px 8px;text-align:center;transition:color .2s,background-color .2s;width:20px}.jsCalendar thead .jsCalendar-nav-left:hover,.jsCalendar thead .jsCalendar-nav-right:hover{background-color:#e2e2e2;color:#000}.jsCalendar thead .jsCalendar-nav-left{float:left}.jsCalendar thead .jsCalendar-nav-right{float:right}.jsCalendar thead .jsCalendar-title-name{cursor:default;float:left;font-size:18px;font-weight:lighter;padding:0 20px}.jsCalendar thead .jsCalendar-nav-left:after{content:"<"}.jsCalendar thead .jsCalendar-nav-right:after{content:">"}.jsCalendar thead .jsCalendar-week-days th{text-shadow:0 0 1px rgba(0,0,0,.2)}.jsCalendar tbody td,.jsCalendar thead .jsCalendar-week-days th{border-radius:18px;cursor:default;display:inline-block;font-size:12px;font-weight:lighter;height:36px;line-height:36px;margin:1px 2px;text-align:center;transition:color .1s,background-color .2s;width:36px}.jsCalendar tbody td:hover{background-color:#e6e6e6}.jsCalendar tbody td.jsCalendar-selected{background-color:#fff;border:2px solid #e6e6e6;box-sizing:content-box;height:32px;line-height:32px;width:32px}.jsCalendar tbody td.jsCalendar-current{background-color:#52c9ff;border-radius:18px;color:#fff}.jsCalendar tbody td.jsCalendar-next,.jsCalendar tbody td.jsCalendar-previous{color:#cacaca}.jsCalendar tbody td.jsCalendar-next:hover,.jsCalendar tbody td.jsCalendar-previous:hover{color:#fff}.jsCalendar thead{display:block;margin:4px 4px 0}.jsCalendar tbody{display:block;margin:0 4px 4px}.jsCalendar ::-moz-selection{background:#83d8ff}.jsCalendar ::selection{background:#83d8ff}.jsCalendar.yellow tbody td.jsCalendar-current{background-color:#ffe31b}.jsCalendar.yellow ::-moz-selection{background:#fde74c}.jsCalendar.yellow ::selection{background:#fde74c}.jsCalendar.orange tbody td.jsCalendar-current{background-color:#ffb400}.jsCalendar.orange ::-moz-selection{background:#ffb400}.jsCalendar.orange ::selection{background:#ffb400}.jsCalendar.red tbody td.jsCalendar-current{background-color:#f6511d}.jsCalendar.red ::-moz-selection{background:#f6511d}.jsCalendar.red ::selection{background:#f6511d}.jsCalendar.green tbody td.jsCalendar-current{background-color:#7fb800}.jsCalendar.green ::-moz-selection{background:#7fb800}.jsCalendar.green ::selection{background:#7fb800}.jsCalendar.material-theme table{border-radius:0}.jsCalendar.material-theme thead{background-color:#52c9ff;color:#fff;margin:0;padding:4px 4px 0}.jsCalendar.material-theme thead .jsCalendar-title{display:block;position:relative}.jsCalendar.material-theme thead .jsCalendar-title-name{border-bottom:1px solid hsla(0,0%,100%,.4);color:#fff;font-size:16px;left:15px;position:absolute;right:15px;text-align:center}.jsCalendar.material-theme thead .jsCalendar-title-left,.jsCalendar.material-theme thead .jsCalendar-title-right{position:absolute;z-index:1}.jsCalendar.material-theme thead .jsCalendar-nav-left,.jsCalendar.material-theme thead .jsCalendar-nav-right{color:#fff}.jsCalendar.material-theme thead .jsCalendar-nav-left:hover,.jsCalendar.material-theme thead .jsCalendar-nav-right:hover{background-color:#03a9f4}.jsCalendar.material-theme thead .jsCalendar-title-right{right:0}.jsCalendar.material-theme thead .jsCalendar-week-days th{font-size:14px;text-shadow:none}.jsCalendar.material-theme.yellow thead{background-color:#ffe31b}.jsCalendar.material-theme.yellow thead .jsCalendar-nav-left:hover,.jsCalendar.material-theme.yellow thead .jsCalendar-nav-right:hover{background-color:#e2ca23}.jsCalendar.material-theme.orange thead{background-color:#ffb400}.jsCalendar.material-theme.orange thead .jsCalendar-nav-left:hover,.jsCalendar.material-theme.orange thead .jsCalendar-nav-right:hover{background-color:#d49600}.jsCalendar.material-theme.red thead{background-color:#f6511d}.jsCalendar.material-theme.red thead .jsCalendar-nav-left:hover,.jsCalendar.material-theme.red thead .jsCalendar-nav-right:hover{background-color:#bb3d16}.jsCalendar.material-theme.green thead{background-color:#7fb800}.jsCalendar.material-theme.green thead .jsCalendar-nav-left:hover,.jsCalendar.material-theme.green thead .jsCalendar-nav-right:hover{background-color:#639000}.jsCalendar.classic-theme table,.jsCalendar.classic-theme tbody td,.jsCalendar.classic-theme tbody td.jsCalendar-current,.jsCalendar.classic-theme thead .jsCalendar-nav-left,.jsCalendar.classic-theme thead .jsCalendar-nav-right,.jsCalendar.classic-theme thead .jsCalendar-week-days th{border-radius:0}.jsCalendar.classic-theme thead{background-color:#52c9ff;margin:0;padding:4px 4px 0}.jsCalendar.classic-theme thead .jsCalendar-title,.jsCalendar.classic-theme thead .jsCalendar-title-row{display:block;width:100%}.jsCalendar.classic-theme thead .jsCalendar-title{position:relative}.jsCalendar.classic-theme thead .jsCalendar-title-name{color:#fff;font-size:16px;left:41px;position:absolute;right:41px;text-align:center;text-shadow:none}.jsCalendar.classic-theme thead .jsCalendar-title-left,.jsCalendar.classic-theme thead .jsCalendar-title-right{position:absolute;z-index:1}.jsCalendar.classic-theme thead .jsCalendar-title-right{right:0}.jsCalendar.classic-theme thead .jsCalendar-nav-left,.jsCalendar.classic-theme thead .jsCalendar-nav-right{color:#fff;text-shadow:none}.jsCalendar.classic-theme thead .jsCalendar-nav-left:hover,.jsCalendar.classic-theme thead .jsCalendar-nav-right:hover{background-color:#03a9f4}.jsCalendar.classic-theme thead .jsCalendar-week-days{background-color:#fff;display:block;margin:0 -4px}.jsCalendar.classic-theme thead .jsCalendar-week-days th{font-size:10px;height:20px;line-height:20px;text-shadow:none}.jsCalendar.classic-theme tbody td{border-left:1px solid #dadada;border-top:1px solid #dadada;margin:-1px 0 0 -1px;padding:1px 1px 0;width:38px}.jsCalendar.classic-theme tbody{margin:0}.jsCalendar.classic-theme tbody td.jsCalendar-selected{background-color:#ccefff;border-bottom:0;border-left:1px solid #dadada;border-right:0;border-top:1px solid #dadada;height:36px;line-height:36px}.jsCalendar.classic-theme tbody td.jsCalendar-current.jsCalendar-selected{background-color:#52c9ff;text-shadow:0 0 3px #000}.jsCalendar.classic-theme.yellow thead{background-color:#ffe31b}.jsCalendar.classic-theme.yellow thead .jsCalendar-nav-left:hover,.jsCalendar.classic-theme.yellow thead .jsCalendar-nav-right:hover{background-color:#e2ca23}.jsCalendar.classic-theme.orange thead{background-color:#ffb400}.jsCalendar.classic-theme.orange thead .jsCalendar-nav-left:hover,.jsCalendar.classic-theme.orange thead .jsCalendar-nav-right:hover{background-color:#d49600}.jsCalendar.classic-theme.red thead{background-color:#f6511d}.jsCalendar.classic-theme.red thead .jsCalendar-nav-left:hover,.jsCalendar.classic-theme.red thead .jsCalendar-nav-right:hover{background-color:#bb3d16}.jsCalendar.classic-theme.green thead{background-color:#7fb800}.jsCalendar.classic-theme.green thead .jsCalendar-nav-left:hover,.jsCalendar.classic-theme.green thead .jsCalendar-nav-right:hover{background-color:#639000}.calendar__display_false{display:none;position:absolute;right:82px;top:54px}.calendar__display_true{display:inline}
